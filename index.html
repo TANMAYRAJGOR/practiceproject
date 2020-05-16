@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Stock Photos</h1>
+  <p class="paragraph">scroll down to explore free stock photos & videos shared by talented creators.</p>
+  <a href="#" class="listicon"><img src="images/list icon 2.png" height="35px" width="35px"></a>
+  <h4 class="browsecategory">Browse Categories</h4>
+  <a href="signup.html" class="button">Login</a>
+  <a href="#" class="simpletext">Upload</a>
+</div>
+
+<div id="navbar">
+    <div class = "topnav">
+      <form class="form">
+      <input id = "searchbar" type="text" name="searchbar" placeholder="Search Here Anything">
+      </form>
+     </div>
+     <img id = "searchicon" src="https://img.icons8.com/cotton/64/000000/search--v1.png"/ height="50px" width="50px">
+</div>
+
+<div class="content">
+  <div class="row">
+    <div class="left" style="background-color: white;">
+      <h2>Contributors</h2>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+        <li><a href="#">Raj</a></li>
+        <li><a href="#">Yash</a></li>
+        <li><a href="#">Tanmay</a></li>
+        <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+      </ul>
+    </div>
+   </div>
+
+   <div class="photos">
+   <h2 id="portfolioheader">PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="rowsecond">
+  <div class="column nature">
+    <div class="contentsecond">
+      <img src="images/image 1.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="images/image 2.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="images/image 1.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/image 2.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="images/image 1.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="images/image 2.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/image 1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="images/image 2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="images/image 1.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+</div>
+</div>
+<script src="app.js"></script>
+
+
+</body>
+</html>
